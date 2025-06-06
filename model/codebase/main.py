@@ -11,7 +11,7 @@ from utils import (
 )
 from planner import generate_plan
 from scripter import generate_script
-from answering_llm import evaluate_task_completion
+from answering import evaluate_task_completion
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.firefox.options import Options
