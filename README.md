@@ -2,9 +2,9 @@
 
 <p align="justify">Large Language Models (LLMs) have shown promise in reasoning and code-related tasks, but they continue to struggle with dynamic software behaviors, especially in Web environments involving interactive Graphical User Interfaces (GUIs). </p>
 
-<p align="justify">This paper presents **ATLAS** (Adaptive Task planning & Learning for Automated Surfing), a novel agentic framework designed to enhance LLMs’ Web task-performing capability—enabling them to interpret natural language goals and autonomously interact with Web applications. </p>
+<p align="justify">This paper presents ATLAS (Adaptive Task planning & Learning for Automated Surfing), a novel agentic framework designed to enhance LLMs’ Web task-performing capability—enabling them to interpret natural language goals and autonomously interact with Web applications. </p>
 
-<p align="justify">Unlike prior approaches that lack adaptability and tractability, ATLAS integrates **Chain-of-Thought (CoT)** prompting with a new **Program-for-Thought (PfT)** strategy, which expresses each reasoning step as executable code for fine-grained verification and backtracking. </p>
+<p align="justify">Unlike prior approaches that lack adaptability and tractability, ATLAS integrates Chain-of-Thought (CoT) prompting with a new Program-for-Thought (PfT) strategy, which expresses each reasoning step as executable code for fine-grained verification and backtracking. </p>
 
 <p align="justify">By combining CoT-based planning, PfT-guided scripting, and multimodal inputs (DOM + screenshots), ATLAS supports adaptive re-planning and precise failure recovery without full-plan regeneration. </p>
 
