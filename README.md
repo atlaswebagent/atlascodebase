@@ -26,22 +26,22 @@ The datasets used by ATLAS are derived from a subset of **WebArena**, categorize
 
 ### 📁 Project Structure
 ```
-├── atlas
-│   ├── model
-│   │   ├── dataset
-│   │   │   ├── low_complexity.json
-│   │   │   ├── medium_complexity.json
-│   │   │   ├── high_complexity.json
-│   │   ├── prompts
-│   │   │   ├── planner_instructions.txt
-│   │   │   ├── scripter_instructions.txt
-│   │   ├── codebase
-│   │   │   ├── config.yaml
-│   │   │   ├── main.py
-│   │   │   ├── planner.py
-│   │   │   ├── scripter.py
-│   │   │   ├── answering_llm.py
-|   └── README.md
+atlas
+├── model
+│   ├── dataset
+│   │   ├── low_complexity.json
+│   │   ├── medium_complexity.json
+│   │   ├── high_complexity.json
+│   ├── prompts
+│   │   ├── planner_instructions.txt
+│   │   ├── scripter_instructions.txt
+│   ├── codebase
+│   │   ├── config.yaml
+│   │   ├── main.py
+│   │   ├── planner.py
+│   │   ├── scripter.py
+│   │   ├── answering_llm.py
+└── README.md
 ```
 
 ---
