@@ -14,23 +14,60 @@ We demonstrate that ATLAS outperforms state-of-the-art baselines in automated We
 
 ---
 
-### Dataset
-The datasets for Atlas have been tested on a subset derived from WebArena
 
-### Project Structure
+---
 
-atlas/
-├── model/
-│ ├── dataset/
-│ │ ├── low_complexity.json
-│ │ ├── medium_complexity.json
-│ │ └── high_complexity.json
-│ ├── prompts/
-│ │ ├── planner_instructions.txt
-│ │ └── scripter_instructions.txt
-│ ├── config.yaml
-│ ├── main.py
-│ ├── planner.py
-│ ├── scripter.py
-│ └── answering_llm.py
-└── README.md
+### 📚 Dataset
+
+The datasets used by ATLAS are derived from a subset of **WebArena**, categorized by task complexity:
+
+- `low_complexity.json`
+- `medium_complexity.json`
+- `high_complexity.json`
+
+---
+
+### 📁 Project Structure
+```
+├── atlas
+│   ├── model
+│   │   ├── dataset
+│   │   │   ├── low_complexity.json
+│   │   │   ├── medium_complexity.json
+│   │   │   ├── high_complexity.json
+│   │   ├── prompts
+│   │   │   ├── planner_instructions.txt
+│   │   │   ├── scripter_instructions.txt
+│   │   ├── config.yaml
+│   │   ├── main.py
+│   │   ├── planner.py
+│   │   ├── scripter.py
+│   │   ├── answering_llm.py
+|   └── README.md
+```
+
+---
+
+### 🧠 Prompt Instructions
+
+Instruction files guiding different components of the agent:
+
+- `planner_instructions.txt`: Instructions for the planning component
+- `scripter_instructions.txt`: Instructions for the scripting component
+
+---
+
+### ⚙️ Core Scripts
+
+- `main.py`: Main entry point to execute tasks
+- `planner.py`: CoT-based planner module
+- `scripter.py`: PfT-guided scripting module
+- `answering_llm.py`: LLM-based reasoning and response handler
+- `config.yaml`: Configuration file for experimental setup
+
+---
+
+### 📄 License & Citation
+
+For licensing and citation details, please refer to the accompanying LICENSE file and cite our paper if you use ATLAS in your work.
+
