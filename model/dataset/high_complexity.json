@@ -1,0 +1,1085 @@
+[
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 32,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "I will arrive {{place}} soon. Provide the name of a {{target1}} in the vicinity, if available. Then, tell me the {{information}} to {{target2}} from the hotel.",
+    "instantiation_dict": {
+      "place": "Pittsburgh Airport",
+      "information": "the walking distance",
+      "target1": "Hilton hotel",
+      "target2": "the nearest supermarket own by a local company"
+    },
+    "intent": "I will arrive Pittsburgh Airport soon. Provide the name of a Hilton hotel in the vicinity, if available. Then, tell me the the walking distance to the nearest supermarket own by a local company from the hotel.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "DoubleTree by Hilton Hotel Pittsburgh Airport",
+          "2.0km"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "DoubleTree by Hilton Hotel Pittsburgh Airport Distance: 2.0km"
+    },
+    "intent_template_id": 78
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 35,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "I will arrive {{place}} soon. Provide the name of a {{target1}} in the vicinity, if available. Then, tell me the {{information}} to {{target2}} from the hotel.",
+    "instantiation_dict": {
+      "place": "Pittsburgh Airport",
+      "target1": "Hyatt hotel",
+      "information": "the minimal driving time",
+      "target2": "a supermarket"
+    },
+    "intent": "I will arrive Pittsburgh Airport soon. Provide the name of a Hyatt hotel in the vicinity, if available. Then, tell me the the minimal driving time to a supermarket from the hotel.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Hyatt Regency Pittsburgh International Airport"
+        ],
+        "fuzzy_match": [
+          "Time: 15min"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Hyatt Regency Pittsburgh International Airport Time: 15min"
+    },
+    "intent_template_id": 78
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 74,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "Given the following locations, {{place_list}}, what would be the optimal route to travel through them all in order to minimize total travel time? Please note the journey begins at the first place listed.",
+    "instantiation_dict": {
+      "place_list": [
+        "Carnegie Mellon University",
+        "apple store shadyside",
+        "starbucks on craig street"
+      ]
+    },
+    "intent": "Given the following locations, ['Carnegie Mellon University', 'apple store shadyside', 'starbucks on craig street'], what would be the optimal route to travel through them all in order to minimize total travel time? Please note the journey begins at the first place listed.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": [
+          "The order is Carnegie Mellon University, starbucks on forbes ave, apple store shadyside"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Carnegie Mellon University, starbucks on forbes ave, apple store shadyside"
+    },
+    "intent_template_id": 65
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 139,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "What is the estimated driving time between {{city1}} and {{city2}}?",
+    "instantiation_dict": {
+      "city1": "the hometown of Joe Biden",
+      "city2": "Bridgeport"
+    },
+    "intent": "What is the estimated driving time between the hometown of Joe Biden and Bridgeport?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": [
+          "3h 20min"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "3h 20min"
+    },
+    "intent_template_id": 51
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 140,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "What is the estimated driving time between {{city1}} and {{city2}}?",
+    "instantiation_dict": {
+      "city1": "the city of Niagara Falls",
+      "city2": "the city of Yale University"
+    },
+    "intent": "What is the estimated driving time between the city of Niagara Falls and the city of Yale University?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": [
+          "8h 33min"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "8h 33min"
+    },
+    "intent_template_id": 51
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 221,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "I am at CMU Pittsburgh, how long it takes to the nearest {{location}} with different transportation methods?",
+    "instantiation_dict": {
+      "location": "USPS postal office"
+    },
+    "intent": "I am at CMU Pittsburgh, how long it takes to the nearest USPS postal office with different transportation methods?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": [
+          "Walk: 1 minute",
+          "Drive: less than 1 minute",
+          "Bike: less than 1 minute"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Walk: 1 minute to walk and\nDrive: less than 1 minute\nBike: less than 1 minute"
+    },
+    "intent_template_id": 35
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 223,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "I am at CMU Pittsburgh, how long it takes to drive to the nearest {{location}}",
+    "instantiation_dict": {
+      "location": "Mcdonald's"
+    },
+    "intent": "I am at CMU Pittsburgh, how long it takes to drive to the nearest Mcdonald's",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": [
+          "4min"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "4min"
+    },
+    "intent_template_id": 35
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 356,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "Show the route from SCS CMU in Pittsburgh to the location where the Declaration of Independence and Constitution were signed",
+    "instantiation_dict": {},
+    "intent": "Show the route from SCS CMU in Pittsburgh to the location where the Declaration of Independence and Constitution were signed",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": null,
+      "program_html": [
+        {
+          "url": "last",
+          "locator": "document.querySelector(\"div#content select.routing_engines\").selectedIndex",
+          "required_contents": {
+            "exact_match": "1"
+          }
+        },
+        {
+          "url": "last",
+          "locator": "document.querySelector('[name=\"route_from\"').value",
+          "required_contents": {
+            "must_include": [
+              "Gates and Hillman Centers",
+              "Pittsburgh"
+            ]
+          }
+        },
+        {
+          "url": "last",
+          "locator": "document.querySelector('[name=\"route_to\"').value",
+          "required_contents": {
+            "must_include": [
+              "Independence Hall",
+              "Philadelphia"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 49
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 369,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "Pull up the description page of {{location}} on Map",
+    "instantiation_dict": {
+      "location": "Carnegie Music Hall"
+    },
+    "intent": "Pull up the description page of Carnegie Music Hall on Map",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": null,
+      "program_html": [
+        {
+          "url": "last",
+          "locator": "document.querySelector('[id=\"sidebar_content\"').outerText",
+          "required_contents": {
+            "must_include": [
+              "Carnegie Music Hall"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 52
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 382,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "I am arriving at Carnegie Mellon University. Find the nearby US Citizenship and Immigration Services and the walking distance to the nearest Social Security Administration from US Citizenship and Immigration Services",
+    "instantiation_dict": {},
+    "intent": "I am arriving at Carnegie Mellon University. Find the nearby US Citizenship and Immigration Services and the walking distance to the nearest Social Security Administration from US Citizenship and Immigration Services",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": "N/A"
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "There is no USCIS nearby",
+      "reference_answer_raw_annotation": "N/A"
+    },
+    "intent_template_id": 781
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 757,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "Show me the path and travel time from {{city1}} to {{city2}}.",
+    "instantiation_dict": {
+      "city1": "home of the 1980 Super Bowl champions",
+      "city2": "home of the 1991 Super Bowl champions"
+    },
+    "intent": "Show me the path and travel time from home of the 1980 Super Bowl champions to home of the 1991 Super Bowl champions.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "last",
+          "locator": "document.querySelector(\"div#content select.routing_engines\").selectedIndex",
+          "required_contents": {
+            "exact_match": "1"
+          }
+        },
+        {
+          "url": "last",
+          "locator": "document.querySelector('[name=\"route_from\"').value",
+          "required_contents": {
+            "must_include": [
+              "Pittsburgh"
+            ]
+          }
+        },
+        {
+          "url": "last",
+          "locator": "document.querySelector('[name=\"route_to\"').value",
+          "required_contents": {
+            "must_include": [
+              "New York"
+            ]
+          }
+        }
+      ]
+    },
+    "intent_template_id": 42
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 74,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "Given the following locations, {{place_list}}, what would be the optimal route to travel through them all in order to minimize total travel time? Please note the journey begins at the first place listed.",
+    "instantiation_dict": {
+      "place_list": [
+        "Carnegie Mellon University",
+        "apple store shadyside",
+        "starbucks on craig street"
+      ]
+    },
+    "intent": "Given the following locations, ['Carnegie Mellon University', 'apple store shadyside', 'starbucks on craig street'], what would be the optimal route to travel through them all in order to minimize total travel time? Please note the journey begins at the first place listed.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": [
+          "The order is Carnegie Mellon University, starbucks on forbes ave, apple store shadyside"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Carnegie Mellon University, starbucks on forbes ave, apple store shadyside"
+    },
+    "intent_template_id": 65
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 75,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "Given the following locations, {{place_list}}, what would be the optimal route to travel through them all in order to minimize total travel time? Please note the journey begins at the first place listed.",
+    "instantiation_dict": {
+      "place_list": [
+        "Massachusetts Institute of Technology",
+        "Harvard University",
+        "Boston Logan International Airport"
+      ]
+    },
+    "intent": "Given the following locations, ['Massachusetts Institute of Technology', 'Harvard University', 'Boston Logan International Airport'], what would be the optimal route to travel through them all in order to minimize total travel time? Please note the journey begins at the first place listed.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": [
+          "The order is Massachusetts Institute of Technology, Harvard University, Boston Logan International Airport"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Massachusetts Institute of Technology, Harvard University, Boston Logan International Airport"
+    },
+    "intent_template_id": 65
+  },
+  {
+    "sites": [
+      "map"
+    ],
+    "task_id": 76,
+    "require_login": true,
+    "storage_state": null,
+    "start_url": "https://www.google.com/maps",
+    "geolocation": null,
+    "intent_template": "Given the following locations, {{place_list}}, what would be the optimal route to travel through them all in order to minimize total travel time? Please note the journey begins at the first place listed.",
+    "instantiation_dict": {
+      "place_list": [
+        "Princeton University",
+        "Yale University",
+        "Harvard University"
+      ]
+    },
+    "intent": "Given the following locations, ['Princeton University', 'Yale University', 'Harvard University'], what would be the optimal route to travel through them all in order to minimize total travel time? Please note the journey begins at the first place listed.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "The order is Princeton University, Yale University, Harvard University"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Princeton University, Yale University, Harvard University"
+    },
+    "intent_template_id": 65
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 47,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770",
+    "geolocation": null,
+    "intent_template": "Today is 6/12/2023. Tell me how many fulfilled orders I have {{period}}, and the total amount of money I spent.",
+    "instantiation_dict": {
+      "period": "over the past month"
+    },
+    "intent": "Today is 6/12/2023. Tell me how many fulfilled orders I have over the past month, and the total amount of money I spent.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "fuzzy_match": [
+          "0 order",
+          "$0 total spend"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0 order, $0 total spend"
+    },
+    "intent_template_id": 197
+  },
+   {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 141,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770",
+    "geolocation": null,
+    "intent_template": "How much I spent on {{category}} shopping during {{time}}",
+    "instantiation_dict": {
+      "category": "food-related",
+      "time": "March 2023"
+    },
+    "intent": "How much I spent on food-related shopping during March 2023",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "47.41"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "$47.41"
+    },
+    "intent_template_id": 162
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 158,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770",
+    "geolocation": null,
+    "intent_template": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all {{num}} cards",
+    "instantiation_dict": {
+      "num": 11
+    },
+    "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 11 cards",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770/heiying-game-card-case-for-nintendo-switch-switch-oled-game-card-or-micro-sd-memory-cards-portable-switch-game-memory-card-storage-with-24-game-card-slots-and-24-micro-sd-card-slots-black.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 171
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 160,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770",
+    "geolocation": null,
+    "intent_template": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all {{num}} cards",
+    "instantiation_dict": {
+      "num": 6
+    },
+    "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 6 cards",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770/heiying-game-card-case-for-nintendo-switch-switch-oled-game-card-or-micro-sd-memory-cards-portable-switch-game-memory-card-storage-with-24-game-card-slots-and-24-micro-sd-card-slots-black.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 171
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 279,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770",
+    "geolocation": null,
+    "intent_template": "Provide me with the complete names of Bluetooth headphones from Sony, and also share the price range for the available models",
+    "instantiation_dict": {},
+    "intent": "Provide me with the complete names of Bluetooth headphones from Sony, and also share the price range for the available models",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "SONY WH1000XM3 Bluetooth Wireless Noise Canceling Headphones Silver WH-1000XM3/S (Renewed)",
+          "Sony WH-CH710N/H Wireless Bluetooth Noise Cancelling Headphones",
+          "Sony WH-1000XM3B Wireless Bluetooth Noise-Canceling Over-Ear Headphones (Black) Basic Headphone Bundle Kit with Stylus",
+          "Sony Wireless Headphones WH-CH510: Wireless Bluetooth On-Ear Headset with Mic for Phone-Call, Black",
+          "Sony WHCH710N Wireless Bluetooth Noise Canceling Over-The-Ear Headphones (Black) with Kratos 18W PD Two-Port Power Adapter and Kratos 6-Feet Nylon Braided USB-C Cable Bundle (3 Items)",
+          "Sony WI-SP500 Wireless in-Ear Sports Headphones, White (WISP500/W)",
+          "Sony WI-SP510 Extra BASS Wireless in-Ear Headset/Headphones with mic for Phone Call Sports IPX5 Bluetooth, Black (WISP510/B)",
+          "Sony MDRAS600BT Active Sports Bluetooth Headset (Black)",
+          "Sony WH-1000XM4 Wireless Noise Canceling Over-Ear Headphones (Black) with Sony WLA-NS7 Wireless TV Adapter Bundle (2 Items)",
+          "Sony WI-C300 Wireless In-Ear Headphones, Red (WIC300/R)",
+          "Sony XB950N1 Extra Bass Wireless Noise Canceling Headphones, Black",
+          "SONY - H900N Hi-Res Noise Cancelling Wireless Headphone Grayish Black Renewed",
+          "18.99",
+          "406"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "These models are avaiable:  SONY WH1000XM3 Bluetooth Wireless Noise Canceling Headphones Silver WH-1000XM3/S (Renewed) Sony WH-CH710N/H Wireless Bluetooth Noise Cancelling Headphones Sony WH-1000XM3B Wireless Bluetooth Noise-Canceling Over-Ear Headphones (Black) Basic Headphone Bundle Kit with Stylus Sony Wireless Headphones WH-CH510: Wireless Bluetooth On-Ear Headset with Mic for Phone-Call, Black Sony WHCH710N Wireless Bluetooth Noise Canceling Over-The-Ear Headphones (Black) with Kratos 18W PD Two-Port Power Adapter and Kratos 6-Feet Nylon Braided USB-C Cable Bundle (3 Items) Sony WI-SP500 Wireless in-Ear Sports Headphones, White (WISP500/W) Sony WI-SP510 Extra BASS Wireless in-Ear Headset/Headphones with mic for Phone Call Sports IPX5 Bluetooth, Black (WISP510/B) Sony MDRAS600BT Active Sports Bluetooth Headset (Black) Sony WH-1000XM4 Wireless Noise Canceling Over-Ear Headphones (Black) with Sony WLA-NS7 Wireless TV Adapter Bundle (2 Items) Sony WI-C300 Wireless In-Ear Headphones, Red (WIC300/R) Sony XB950N1 Extra Bass Wireless Noise Canceling Headphones, Black SONY - H900N Hi-Res Noise Cancelling Wireless Headphone Grayish Black Renewed The price ranges from $18.99 to $406  "
+    },
+    "intent_template_id": 204
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 282,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770",
+    "geolocation": null,
+    "intent_template": "List the full product names of slide slippers from Nike and tell me the price range of the available products",
+    "instantiation_dict": {},
+    "intent": "List the full product names of slide slippers from Nike and tell me the price range of the available products",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Nike Men's Air Max Camden Slide Sandal",
+          "Nike Men's Benassi JDI Fanny Pack Slides",
+          "Nike Victori One Mens Comfort Slide Cn9675-003 (Midnight Navy/Midnight Navy/White, Numeric_10)",
+          "Nike Offcourt Slide Mens Bq4639-002 Size 12",
+          "Nike Jordan Men's Break Slide Red AR6374-602",
+          "Nike Victori One Slide Mens Style : Dd9559-300",
+          "Nike Men's Benassi Solarsoft Slide Athletic Sandal (Black/White, numeric_14)",
+          "Nike Men's Benassi Solarsoft Slide Athletic Sandal (Midnight Navy/Blue, numeric_8)",
+          "Nike womens Benassi Just Do It",
+          "27.6",
+          "90.65"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "These models are availiable: Nike Men's Air Max Camden Slide Sandal Nike Men's Benassi JDI Fanny Pack Slides Nike Victori One Mens Comfort Slide Cn9675-003 (Midnight Navy/Midnight Navy/White, Numeric_10) Nike Offcourt Slide Mens Bq4639-002 Size 12 Nike Jordan Men's Break Slide Red AR6374-602 Nike Victori One Slide Mens Style : Dd9559-300 Nike Men's Benassi Solarsoft Slide Athletic Sandal (Black/White, numeric_14) Nike Men's Benassi Solarsoft Slide Athletic Sandal (Midnight Navy/Blue, numeric_8) Nike womens Benassi Just Do It   The price ranges from $27.6 to $90.65"
+    },
+    "intent_template_id": 204
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 320,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770",
+    "geolocation": null,
+    "intent_template": "How much refund I should expect from my order cancelled in {{time}}, including shipping fee",
+    "instantiation_dict": {
+      "time": "Feb 2023"
+    },
+    "intent": "How much refund I should expect from my order cancelled in Feb 2023, including shipping fee",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "406.53"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "406.53"
+    },
+    "intent_template_id": 160
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 269,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770",
+    "geolocation": null,
+    "intent_template": "Show me products under ${{price}} in \"{{product_category}}\" category",
+    "instantiation_dict": {
+      "price": "25",
+      "product_category": "women shoes"
+    },
+    "intent": "Show me products under $25 in \"women shoes\" category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770/clothing-shoes-jewelry/women/shoes.html?price=0-25",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 139
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 238,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770",
+    "geolocation": null,
+    "intent_template": "I am doing a market survey for one stop market, show me the most expensive product from {{product_category}} category",
+    "instantiation_dict": {
+      "product_category": "PS4 accessories"
+    },
+    "intent": "I am doing a market survey for one stop market, show me the most expensive product from PS4 accessories category",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "url_match"
+      ],
+      "reference_answers": null,
+      "reference_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770/astro-gaming-a50-wireless-headset-base-station-gen-4-compatible-with-ps5-ps4-pc-mac-black-silver.html",
+      "program_html": [],
+      "url_note": "GOLD in PRED"
+    },
+    "intent_template_id": 138
+  },
+  {
+    "sites": [
+      "shopping"
+    ],
+    "task_id": 329,
+    "require_login": true,
+    "storage_state": "./.auth/shopping_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:7770",
+    "geolocation": null,
+    "intent_template": "How much I spend {{time}} on shopping at One Stop Market?",
+    "instantiation_dict": {
+      "time": "on 4/19/2023"
+    },
+    "intent": "How much I spend on 4/19/2023 on shopping at One Stop Market?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 147
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 135,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:8023",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make to {{repo}} on {{date}}?",
+    "instantiation_dict": {
+      "user": "Eric and Kilian",
+      "repo": "a11yproject",
+      "date": "1/3/2023"
+    },
+    "intent": "How many commits did Eric and Kilian make to a11yproject on 1/3/2023?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "1"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "1"
+    },
+    "intent_template_id": 322
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 171,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:8023",
+    "geolocation": null,
+    "intent_template": "Tell me the full names of the repositories where I made contributions and they got {{description}} stars?",
+    "instantiation_dict": {
+      "description": "less than 5"
+    },
+    "intent": "Tell me the full names of the repositories where I made contributions and they got less than 5 stars?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "a11y-syntax-highlighting",
+          "a11y-webring.club",
+          "accessible-html-content-patterns",
+          "ericwbailey.website",
+          "cloud-to-butt",
+          "dotfiles",
+          "timeit",
+          "solarized-prism-theme",
+          "gimmiethat.space",
+          "remove-board-movement-events-from-the-github-issue-timeline"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "a11y-syntax-highlighting, a11y-webring.club, accessible-html-content-patterns, ericwbailey.website, cloud-to-butt, dotfiles, timeit, solarized-prism-theme,  gimmiethat.space, remove-board-movement-events-from-the-github-issue-timeline"
+    },
+    "intent_template_id": 289
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 306,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:8023/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make {{period}}?",
+    "instantiation_dict": {
+      "user": "Anthony",
+      "period": "between 08/2022-09/2022"
+    },
+    "intent": "How many commits did Anthony make between 08/2022-09/2022?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 321
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 304,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:8023/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make {{period}}?",
+    "instantiation_dict": {
+      "user": "Eric",
+      "period": "between Feb 2023 and May 2023"
+    },
+    "intent": "How many commits did Eric make between Feb 2023 and May 2023?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "14"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "14"
+    },
+    "intent_template_id": 321
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 305,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:8023/a11yproject/a11yproject.com",
+    "geolocation": null,
+    "intent_template": "How many commits did {{user}} make {{period}}?",
+    "instantiation_dict": {
+      "user": "Philip",
+      "period": "in 2023/1"
+    },
+    "intent": "How many commits did Philip make in 2023/1?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "0"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "0"
+    },
+    "intent_template_id": 321
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 314,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:8023",
+    "geolocation": null,
+    "intent_template": "List the {{attribute}} of the top 3 contributors to {{repo}} repo, ranked by the number of commits?",
+    "instantiation_dict": {
+      "repo": "prime/design",
+      "attribute": "name"
+    },
+    "intent": "List the name of the top 3 contributors to prime/design repo, ranked by the number of commits?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "Shawn Allen",
+          "Inayaili Le\u00f3n",
+          "Aurora Pleguezuelo"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Shawn Allen, Inayaili Le\u00f3n, Aurora Pleguezuelo"
+    },
+    "intent_template_id": 324
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 315,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:8023",
+    "geolocation": null,
+    "intent_template": "List the {{attribute}} of the top 3 contributors to {{repo}} repo, ranked by the number of commits?",
+    "instantiation_dict": {
+      "repo": "Pytorch GAN",
+      "attribute": "email address"
+    },
+    "intent": "List the email address of the top 3 contributors to Pytorch GAN repo, ranked by the number of commits?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "eriklindernoren@live.se",
+          "eriklindernoren@gmail.com",
+          "pinnacle.chen@qq.com"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "eriklindernoren@live.se, eriklindernoren@gmail.com, pinnacle.chen@qq.com"
+    },
+    "intent_template_id": 324
+  },
+  {
+    "sites": [
+      "gitlab"
+    ],
+    "task_id": 308,
+    "require_login": true,
+    "storage_state": "./.auth/gitlab_state.json",
+    "start_url": "http://ec2-3-143-115-189.us-east-2.compute.amazonaws.com:8023",
+    "geolocation": null,
+    "intent_template": "Tell me who has made the most contributions, in terms of number of commits, to the {{repo}} project",
+    "instantiation_dict": {
+      "repo": "primer/design"
+    },
+    "intent": "Tell me who has made the most contributions, in terms of number of commits, to the primer/design project",
+    "require_reset": false,
+    "eval": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "exact_match": "Shawn Allen"
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "Shawn Allen"
+    },
+    "intent_template_id": 323
+  }
+]
