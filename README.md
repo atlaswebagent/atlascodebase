@@ -38,11 +38,12 @@ The datasets used by ATLAS are derived from a subset of **WebArena**, categorize
 │   │   ├── prompts
 │   │   │   ├── planner_instructions.txt
 │   │   │   ├── scripter_instructions.txt
-│   │   ├── config.yaml
-│   │   ├── main.py
-│   │   ├── planner.py
-│   │   ├── scripter.py
-│   │   ├── answering_llm.py
+│   │   ├── codebase
+│   │   │   ├── config.yaml
+│   │   │   ├── main.py
+│   │   │   ├── planner.py
+│   │   │   ├── scripter.py
+│   │   │   ├── answering_llm.py
 |   └── README.md
 ```
 
