@@ -65,7 +65,17 @@ Instruction files guiding different components of the agent:
 
 ---
 
-### 📄 License & Citation
+### ⚙️ How to Run
+- Clone the official github repository for ATLAS
+```
+git clone https://github.com/atlaswebagent/atlascodebase.git
+```
+-  Add the necessary details, including API keys, models and endpoints required for fuzzing in model/codebase/config.yaml
+-  Run the 'model/main.py' file through terminal in the following format - 
+```
+python main.py 
+```
+  ### 📄 License & Citation
 
 For licensing and citation details, please refer to the accompanying LICENSE file and cite our paper if you use ATLAS in your work.
 
