@@ -14,9 +14,6 @@ We demonstrate that ATLAS outperforms state-of-the-art baselines in automated We
 
 ---
 
-
----
-
 ### 📚 Dataset
 
 The datasets used by ATLAS are derived from a subset of **WebArena**, categorized by task complexity:
